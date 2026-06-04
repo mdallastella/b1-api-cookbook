@@ -1,16 +1,49 @@
-<img src="https://github.com/Xaypanya/b1-api-cookbook/blob/main/b1-api-cookbook.png" alt="b1-api-cookbook logo" width="300">
+<img src="https://github.com/Xaypanya/b1-api-cookbook/blob/main/b1-api-cookbook.png" alt="SAP Business One (SAP B1) Service Layer API Cookbook and Postman Collection logo" width="300">
 
-# B1 API Cookbook
+# B1 API Cookbook — SAP Business One Service Layer Postman Collection & API Reference
+
+> **Free, ready-to-use Postman collection for the SAP Business One (SAP B1) Service Layer REST API.** Includes 499 services and 1,950+ endpoints (Login, Business Partners, Items, Orders, Invoices, GL Accounts, and more) with auto-managed B1SESSION authentication, OData V4 metadata schemas, and beginner-friendly setup guides.
+
+**Keywords:** SAP B1 Postman Collection · SAP Business One Service Layer · SAP B1 REST API · SAP B1 Service Layer Postman · SAP B1 API Examples · SAP Business One OData V4 · B1s/v2 endpoints · SAP B1 Login Session · SAP B1 Integration · SAP B1 Developer Cookbook
+
 ## Overview
 
 The `b1-api-cookbook` repository is a comprehensive resource for developers working with the **SAP Business One (SAP B1) Service Layer APIs**. It provides detailed information about service endpoints, metadata schemas, and practical examples to assist both beginners and experienced developers in integrating with SAP B1 services. This repository includes:
 
+- **Postman Collection (ready to import)**: A complete `SAP-B1-ServiceLayer.postman_collection.json` covering every service exposed at `https://<your-server>:50000/b1s/v2/`, with a paired environment file and automatic session/cookie handling.
 - **Service Descriptions**: JSON files defining the endpoints and operations for each service.
 - **Metadata Schemas**: OData V4 schemas (in EDMX format) describing the data models used by the APIs.
 - **Guides for Beginners**: Step-by-step instructions to set up and use the APIs.
 - **Code Examples**: Practical examples of API calls for various services.
 
 The goal of this repository is to simplify interaction with the SAP B1 Service Layer by providing clear documentation and reusable examples.
+
+## 🚀 SAP B1 Service Layer Postman Collection (Ready to Use)
+
+If you searched for an **SAP Business One Postman collection**, **SAP B1 Service Layer Postman**, or a **B1 REST API collection**, this is the file you want.
+
+### What's included
+- **499 service folders** covering the full SAP B1 Service Layer (`/b1s/v2/`).
+- **1,950+ pre-built requests** — `GET`, `POST`, `PATCH`, `DELETE` for entities and service-method calls.
+- **Auto-managed authentication** — the `Login` request captures `SessionId` and the `ROUTEID` cookie into Postman variables; every other request reuses them automatically.
+- **Environment file** with `baseUrl`, `UserName`, `Password`, `CompanyDB`, `B1SESSION`, `ROUTEID`.
+- **Postman v2.1 schema** — compatible with Postman desktop, web, Newman CLI, and Insomnia (via import).
+
+### Files
+- [`postman/SAP-B1-ServiceLayer.postman_collection.json`](./postman/SAP-B1-ServiceLayer.postman_collection.json) — the collection
+- [`postman/SAP-B1-ServiceLayer.postman_environment.json`](./postman/SAP-B1-ServiceLayer.postman_environment.json) — the environment
+
+### Quick start (3 steps)
+1. **Import** both JSON files in Postman (`File → Import`).
+2. **Select** the `SAP B1 Service Layer` environment and set:
+   - `baseUrl` → e.g. `https://your-server:50000/b1s/v2`
+   - `UserName`, `Password`, `CompanyDB`
+3. **Run `00 - Authentication → Login`** once. The test script stores `B1SESSION` and `ROUTEID` — every other request is now authenticated.
+
+> 💡 If your SAP B1 server uses a self-signed certificate, disable SSL certificate verification in Postman: `Settings → General → SSL certificate verification = OFF`.
+
+### Example services covered
+`BusinessPartners`, `Items`, `Orders`, `Quotations`, `DeliveryNotes`, `Invoices`, `CreditNotes`, `PurchaseOrders`, `PurchaseInvoices`, `JournalEntries`, `ChartOfAccounts`, `Warehouses`, `PriceLists`, `Employees`, `Activities`, `Attachments2`, `BankPages`, `Projects`, `SalesPersons`, and **480+ more** — every entity and service method exposed by the SAP B1 Service Layer.
 
 ## Repository Structure
 
