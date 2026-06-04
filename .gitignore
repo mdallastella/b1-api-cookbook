@@ -36,3 +36,6 @@ coverage/
 # Misc
 *.tgz
 .pnpm-debug.log
+
+# Local generator scripts (not for distribution)
+scripts/
